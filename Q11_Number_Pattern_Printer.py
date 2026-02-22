@@ -27,3 +27,47 @@ elif p == 4:  # Pattern 4 selected
         for j in range(i-1, 0, -1):  # Decreasing part (i-1 to 1)
             print(j, end="")  # Print without space
         print()  # Moves to next line
+   
+#tested outputs with multiple inputs 
+     
+      
+# Height: 4
+# Pattern (1-4): 1
+# 1 
+# 1 2 
+# 1 2 3 
+# 1 2 3 4 
+
+# C:\Users\swaro\OneDrive\Desktop\Assignment_2>C:/Python313/python.exe c:/Users/swaro/OneDrive/Desktop/Assignment_2/Q11_Number_Pattern_Printer.py
+# Height: 5
+# Pattern (1-4): 2
+# 1 
+# 2 2
+# 3 3 3
+# 4 4 4 4
+# 5 5 5 5 5
+
+# C:\Users\swaro\OneDrive\Desktop\Assignment_2>C:/Python313/python.exe c:/Users/swaro/OneDrive/Desktop/Assignment_2/Q11_Number_Pattern_Printer.py
+# Height: 6
+# Pattern (1-4): 3
+# 6 5 4 3 2 1 
+# 5 4 3 2 1
+# 4 3 2 1
+# 3 2 1
+# 2 1
+# 1
+
+# C:\Users\swaro\OneDrive\Desktop\Assignment_2>C:/Python313/python.exe c:/Users/swaro/OneDrive/Desktop/Assignment_2/Q11_Number_Pattern_Printer.py
+# Height: 7
+# Pattern (1-4): 5
+
+# C:\Users\swaro\OneDrive\Desktop\Assignment_2>C:/Python313/python.exe c:/Users/swaro/OneDrive/Desktop/Assignment_2/Q11_Number_Pattern_Printer.py
+# Height: 7
+# Pattern (1-4): 4
+# 1
+# 121
+# 12321
+# 1234321
+# 123454321
+# 12345654321
+# 1234567654321
