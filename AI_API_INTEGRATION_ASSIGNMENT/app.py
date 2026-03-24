@@ -37,7 +37,7 @@ api_choice = st.selectbox(
 prompt = st.text_area("Enter your prompt")
 
 
-# -------- API FUNCTIONS -------- #
+#API FUNCTIONS 
 
 # Groq
 def query_groq(prompt):
