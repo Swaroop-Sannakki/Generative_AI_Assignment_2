@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Meta tags for proper character encoding and responsive design -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Chat UI</title>
+
+<!-- Bootstrap for layout and responsiveness -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- Google Font (Inter) for modern typography -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<!-- Custom CSS file -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- Main container holding sidebar and chat area -->
+<div class="app-container">
+
+<!-- ================= SIDEBAR ================= -->
+<aside class="sidebar">
+
+<!-- Button to start a new chat -->
+<button class="new-chat-btn">+ New Chat</button>
+
+<!-- Button to toggle dark mode -->
+<button id="darkModeBtn">🌙 Dark Mode</button>
+
+<!-- Button to export chat as text file -->
+<button id="exportBtn">⬇ Export Chat</button>
+
+<!-- Chat history section (future functionality) -->
+<div class="chat-history"></div>
+
+<!-- User profile section (fixed at bottom using CSS) -->
+<div class="profile">👤 Sannakki Swaroop</div>
+
+</aside>
+
+<!-- ================= CHAT AREA ================= -->
+<main class="chat-area">
+
+<!-- Message display container -->
+<section class="messages" id="messages">
+
+<!-- Welcome screen (shown initially before user sends message) -->
+<section class="welcome" id="welcome">
+
+<!-- Bot icon/logo -->
+<img src="images/bot.png" class="welcome-icon">
+
+<!-- Welcome text -->
+<h2>Welcome</h2>
+<p>How can I help you today?</p>
+
+<!-- Suggestion cards container -->
+<div class="cards">
+
+<!-- Each card represents a quick action suggestion -->
+<div class="card suggestion">
+<i class="fa fa-book"></i>
+<h6>Summarize</h6>
+<p>summarize Quick notes</p>
+</div>
+
+<div class="card suggestion">
+<i class="fa fa-calculator"></i>
+<h6>Math</h6>
+<p>Solve math problems</p>
+</div>
+
+<div class="card suggestion">
+<i class="fa fa-lightbulb"></i>
+<h6>Explain</h6>
+<p>Understand the concepts</p>
+</div>
+
+<div class="card suggestion">
+<i class="fa fa-briefcase"></i>
+<h6>Interview</h6>
+<p>Prepare for interviews</p>
+</div>
+
+</div>
+
+</section>
+</section>
+
+<!-- Typing indicator (shown when AI is responding) -->
+<div class="typing d-none" id="typing">
+<span></span><span></span><span></span>
+</div>
+
+<!-- ================= INPUT AREA ================= -->
+<section class="input-area">
+
+<!-- Attachment button (UI only for now) -->
+<button class="attach-btn">
+<i class="fa fa-paperclip"></i>
+</button>
+
+<!-- Textarea for user input -->
+<textarea id="input" placeholder="Message..."></textarea>
+
+<!-- Send message button -->
+<button id="sendBtn">
+<i class="fa fa-paper-plane"></i>
+</button>
+
+</section>
+
+<!-- Footer text below input area -->
+<div class="input-footer">
+Chat can make mistakes.
+</div>
+
+</main>
+
+</div>
+
+<!-- jQuery library (required for JS functionality) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Custom JavaScript file -->
+<script src="js/chat.js"></script>
+
+</body>
+</html>
